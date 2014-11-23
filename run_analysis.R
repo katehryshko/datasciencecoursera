@@ -22,10 +22,10 @@ columns <- grep(".*Mean.*|.*Std.*", xx[,2])
 
 xx <- xx[columns,]
 c <- c(columns, 562, 563)
-data <- data[,colsWeWant]
+data <- data[,columns]
 # Add the column names (xx) to data
 colnames(data) <- c(xx$V2, "Activity", "Subject")
-colnames(data) <- tolower(colnames(data))
+
 
 currentActivity = 1
 for (currentActivityLabel in activityLabels$V2) {
