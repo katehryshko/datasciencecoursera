@@ -8,7 +8,6 @@ testdata[,563] = read.csv("UCI HAR Dataset/test/subject_test.txt", sep="", heade
 
 Labels = read.csv("UCI HAR Dataset/activity_labels.txt", sep="", header=FALSE)
 
-
 xx = read.csv("UCI HAR Dataset/xx.txt", sep="", header=FALSE)
 xx[,2] = gsub('-mean', 'Mean', xx[,2])
 xx[,2] = gsub('-std', 'Std', xx[,2])
